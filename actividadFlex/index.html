@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="https://www.juntadeandalucia.es/sites/default/files/favicon.ico">
+</head>
+<body>
+    <!-- El contenido se ceñirá a un ancho inferior, se alinean desde el logo de 
+        la junta de andalucía hacia abajo e izquierda y desde el último botón del 
+        índice hacia la derecha.
+
+        La imagen no sale entera en todos los formatos de pantalla, no se visualizan
+        completas en el "hero".
+
+        Son 4 contenedores principales: contacto, cabecera, hero y seccion.
+
+        El logo de la cabecera son 2 items que se alinean con flex al medio.
+        El menú será otro contenedor flex dentro de el padre.
+
+        Los de contacto se alinean con align-self, unos elementos a la izq y otros a
+        la dch.
+
+        En el hero hay un input metido dentro de un contenedor.  
+
+        En las secciones el titulo es un h3, son 4 contenedores con un logo, titulo h4,
+        una linea y 3 enlaces; si se ponen en bloque saldrán unos debajos de otros.
+    -->    
+    <div class="contacto">
+        <div class="contacto-items mrgn">
+            <div class="contacto-nombre">
+                <p>16, Antonio Sard González</p>
+            </div>        
+            <div class="contacto-links">
+                <a href="./index.html">Contacto</a>
+                <a href="./index.html">Mapa web</a>
+            </div>       
+        </div>         
+    </div>
+    <header>
+        <div class="logo">
+            <img src="./references/logo-junta-1-actividad-3.png" class="logo-img" alt="Logo Junta de Andalucía">
+            <img src="./references/logo-junta-2-actividad-3.png" class="logo-letras" alt="Letras logo Junta de Andalucía">
+        </div>
+        <div class="menu">
+            <a href="./index.html">Estudiar</a>
+            <a href="./index.html">Trabajar</a>
+            <a href="./index.html">Tu salud</a>
+            <a href="./index.html">Más temas</a>
+            <a href="./index.html">Transparencia</a>
+            <a href="./index.html">La Junta</a>
+            <a href="./index.html">Servicios</a>
+            <a href="./index.html">Noticias</a>
+        </div>
+    </header>
+    <div class="hero">
+        <div class="hero-background">
+            <img src="https://www.juntadeandalucia.es/sites/default/files/2023-11/recomendador_jda_noviembre_cita_previa.jpg" alt="Imagen junta andalucia fondo">
+        </div>        
+        <div class="form">            
+            <form>
+                <label for="input"><strong>¿En qué podemos ayudarte?</strong></label>
+                <div class="input-area">
+                    <input type="text" name="input-text" id="input-text"/>
+                    <div class="input-area-btn">
+                        <input type="button" id="input-btn">
+                        <img src="references/search-img.png" alt="Lupa búsqueda">
+                    </div>                    
+                </div>                
+            </form>
+        </div>
+    </div>
+    <section class="mrgn">
+        <h3>DIRECTO A</h3>
+        <div class="secciones">
+            <div class="seccion">
+                <img src="references/gorrito.PNG" alt="Gorro bacano">
+                <h4>Estudiar</h4>
+                <a href="./index.html">Becas de la Junta de Andalucía</a>
+                <a href="./index.html">PASEN</a>
+                <a href="./index.html">Universidad: Distrito Único Andaluz</a>
+            </div>
+            <div class="seccion">
+                <img src="references/maletin.PNG" alt="Maletin trabajo">
+                <h4>Trabajar</h4>
+                <a href="./index.html">Renovar demanda de empleo</a>
+                <a href="./index.html">Ofertas de empleo</a>
+                <a href="./index.html">Oficina Virtual FPE</a>
+            </div>
+            <div class="seccion">
+                <img src="references/corazon.PNG" alt="Corazon sanitario">
+                <h4>Tu salud</h4>
+                <a href="./index.html">Cita en centros sanitarios</a>
+                <a href="./index.html">Salud Responde</a>
+                <a href="./index.html">Vacunación gripe</a>
+            </div>
+            <div class="seccion">
+                <img src="references/casa.PNG" alt="Casita fresca">
+                <h4>Vivienda y consumo</h4>
+                <a href="./index.html">Bono alquiler joven</a>
+                <a href="./index.html">Ayudas Plan EcoVivienda</a>
+                <a href="./index.html">Hojas de quejas y reclamaciones</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
