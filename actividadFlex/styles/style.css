@@ -13,6 +13,7 @@ body{
 }
 
 .contacto-items {
+    margin: 0px 200px;
     display:flex;
     align-items: baseline;
     justify-content: space-between;
