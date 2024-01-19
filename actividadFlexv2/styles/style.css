@@ -68,6 +68,10 @@ body{
     font-size: 16px;
  }
 
+ .hamburger-menu {
+    display: none;
+ }
+
  .hero {
     position: relative;
 }
@@ -195,44 +199,132 @@ h3{
     margin: 15px 0px;
 }
 
-/* Estilos generales */
 
-@media screen and (max-width: 768px) {
-    /* Estilos específicos para pantallas con un ancho máximo de 768px */
-    .mrgn {
-        margin: 2px 20px; /* Ajusta el margen para pantallas más pequeñas */
+@media (max-width: 500px) {
+    form {
+        margin: -6px;        
     }
 
-    header {
-        margin: 20px 20px; /* Ajusta el margen para pantallas más pequeñas */
+    .contacto-links{
+        align-self: stretch;
+        flex-wrap: wrap;
+        width: 70px;
+        margin-top: 5px;
     }
 
-    .logo-letras {
-        width: 200px; /* Ajusta el tamaño del logo de letras para pantallas más pequeñas */
+    .contacto-nombre p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 900px) {          
+
+    .hero {
+        margin: 20px 0; 
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    @media (min-width: 501px){
+        form {
+            margin: 50px;             
+        }
+    }
+    
+
+    #input-text {
+        width: 100%; 
+    }             
+
+}
+
+@media (max-width: 1150px) {
+    .logo-img {
+        width: 60px; 
     }
 
     .menu {
-        width: 100%; /* Hace que el menú ocupe todo el ancho en pantallas más pequeñas */
+        display: none; 
     }
 
-    .hero {
-        margin: 20px 0; /* Ajusta el margen del hero para pantallas más pequeñas */
+    .hamburger-menu {
+        display: flex; 
+        align-items: center;
+        cursor: pointer;
     }
 
-    form {
-        margin: 20px; /* Ajusta el margen del formulario para pantallas más pequeñas */
+    .hamburger-menu img {
+        width: 30px; 
     }
 
-    #input-text {
-        width: 100%; /* Hace que el input ocupe todo el ancho en pantallas más pequeñas */
+    .hamburger-menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px; 
+        right: 20px; 
+        background-color: #fff;
+        border: 1px solid #ccc;
+        border-radius: 5px;
     }
 
-    .secciones {
-        flex-wrap: wrap; /* Permite que las secciones se envuelvan en pantallas más pequeñas */
-        padding-bottom: 20px; /* Ajusta el espacio entre secciones para pantallas más pequeñas */
+    .hamburger-menu li {
+        padding: 10px;
+        text-align: center;
     }
 
+    .hamburger-menu a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .hamburger-menu.active ul {
+        display: flex;
+    }
+    header {
+        margin: 20px 20px; 
+        flex-wrap: nowrap;
+    }
+
+    .logo-letras {
+        width: 200px; 
+    }
+
+    .menu {
+        width: 100%; 
+    }
+
+    .secciones{
+        flex-wrap: wrap; 
+    }
+}
+
+@media (max-width:1650px) and (min-width: 1151px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+        
+    }
+
+    .logo {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 1750px) {
+    .secciones {        
+        gap: 30px;
+        padding-bottom: 20px; 
+    }
+
+    .mrgn {
+        margin: 2px 20px; 
+    }  
+    
     .seccion {
-        width: 100%; /* Hace que las secciones ocupen todo el ancho en pantallas más pequeñas */
-    }
+        width: 100%; 
+    }   
 }
